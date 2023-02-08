@@ -1,6 +1,10 @@
 /*
 The algorithm is to first transpose the matrix and then reverse each row. Now to do this visit every row, that is visit every array of the 2d array and then for each array loop through the array or corresponding column and swap the elements with the idexes. then reverse each array in the 2d array to obtain the solution.
+
+TIME O(N)
+SPACE O(1)
 */
+
 var rotate = function(matrix) {
     
     for(let rows = 0;rows<matrix.length;rows++){
