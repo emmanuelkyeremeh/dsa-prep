@@ -3,9 +3,9 @@ var numDecodings = function (s) {
 
   dp[s.length] = "1";
 
-  for (let i = s.length - 1; i <= 0; i--) {
-    if (s[i] === 0) {
-      dp[i] = 0;
+  for (let i = s.length - 1; i >= 0; i--) {
+    if (s[i] === "0") {
+      dp[i] = "0";
     } else {
       dp[i] = `${dp[i + 1]}`;
     }
@@ -18,7 +18,9 @@ var numDecodings = function (s) {
     }
   }
 
-  return dp[0];
+  console.log(dp);
+
+  return dp["0"];
 
   /*
     this is very similar to past dp solutions so as usual we will have to tackle the sub problems we need to run this code step by step to ensure we understand what is going on here
