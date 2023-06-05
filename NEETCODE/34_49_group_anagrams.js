@@ -1,3 +1,6 @@
+/*
+two words are anagrams if one word can be re arranged to form the other word. so thry must be of the same length and have the same characters and the same frequency of characters which is what the code seeks to check
+*/
 var groupAnagrams = function (strs) {
   let map = {};
   let result = [];
